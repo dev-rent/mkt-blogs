@@ -1,0 +1,177 @@
+<script src="https://cdn.plot.ly/plotly-3.3.0.min.js" charset="utf-8"></script>
+<title>Financial Insights: Planning Growth Based On Interest Rates</title>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="https://dev-rent.github.io/mkt-blogs/static/css/blog_style.css">
+
+<article>
+  <section id="introduction">
+    <p>If you're up-to-date with the financial press, you might have heard a lot of speculation in recent months about a suggested lowering of ECB-rates. The prospect of lowering the rates might make you consider whether today is the right time to make a large investment instead of waiting for the lowering of these rates. In this article, we will <strong class="cfo-tip">highlight the importance of keeping track of financial rates and how they can impact your business</strong>.</p>
+  </section>
+
+  <section id="key-takeaways">
+    <h2 class="h2-blog"><strong>Key-Takeaways</strong></h2>
+    <ul>
+      <li>Euribor rates are <strong class="cfo-tip">a benchmark</strong> for commercial rates.</li>
+      <li>Keeping track of interest rates helps you to plan your <strong class="cfo-tip">future investments</strong>.</li>
+      <li>High interest <strong class="cfo-tip">rates affect the growth</strong> of your business or the success of your investment.</li></ul>
+  </section>
+ 
+  <section id="euribor">
+    <h2 class="h2-blog">Euro Interbank Offered Rate (EURIBOR)</h2>
+
+    <blockquote>
+      It's almost always harder to raise capital than you thought it would be, and it always takes longer. So plan for that.<br>
+      - Richard Harroch
+    </blockquote>
+    
+    <p>Richard Harroch says what virtually every growing business experiences on a regular basis. The founder started with an idea, an itch if you will, but then suddenly all different kinds of teachings enter the metaphorical arena. Financing, managing, accounting, recruitment and so on. For every discipline a different doctrine. And what should they do?</p>
+
+    <p>Don't worry, it's not necessary to get a PhD for each and every discipline. A basic understanding of how "things" work will get you far in looking for a suitable partner to assist you. But first, we need a <strong class="cfo-tip">better understanding of where our money is coming from</strong>.</p>
+
+    <p>Tracing back the origin of our money will eventually lead us to a bank. More specifically, we would be going from one bank, to another, to the next one and maybe back again. Money is subjected to supply and demand, just like consumer goods. Banks lend money to each other and, like any other loan, they have to pay interest for it. This huge amount of money is usually named a fund and banks bid on these funds with set interest rates. However, because of the scale on which this operation works, it is necessary to <strong class="cfo-tip">regulate this lending of funds and stabilise the rate</strong> at which this money gets bought. Introduce: <strong class="cfo-tip">EURIBOR</strong>.</p>
+
+    <p>Each business day, a panel of approximately 20 European banks send their fund interest rates to the European Money Markets Institute. The latter discards the top and bottom 15% and calculates the average rate of the remaining entries. This <strong class="cfo-tip">average rate will be the rate presented by the Euribor</strong>. Therefore, we can consider the Euribor as a benchmark against which all other European banks can match their rates. Add a small percentage on top of the Euribor, and it becomes clear how banks earn their gross profit margins when they loan these funds to private and professional ventures.</p>
+  </section>
+
+  <section id="euribor-rates">
+    <h2 class="h2-blog">Euribor Rates</h2>
+
+    <p>First and foremost: Euribor rates <strong class="cfo-tip">do not apply to non-financial businesses</strong>. Yet, the Euribor rates do affect our business, as will be elaborated later on.</p>
+    
+    <p>Out of historical data, it is <strong class="cfo-tip">possible to derive historical trends</strong>, as shown in figure 1. Before 2008, business was booming, so to speak. But in October of that same year, financial institutions began to crumble, the financial crisis began and rates started dropping. Following that crisis was the European debt crisis which was halted by Mario Draghi's famous words: "Whatever it takes". Many will remember the declining interest rates afterwards, which saw their turn-around in 2022.</p>
+    
+    <div id="graph-euribor" style="width:600px;height:250px;"></div>
+
+    <script>
+      fetch('https://dev-rent.github.io/mkt-blogs/static/json/euribor_rates.json')
+        .then(response => response.json())
+        .then(data => {
+          Plotly.newPlot('graph-euribor', data.data, data.layout);
+        })
+        .catch(err => console.error(err));
+    </script>
+  </section>
+
+  <section id="european-central-bank">
+    <h2 class="h2-blog">The European Central Bank</h2>
+
+    <p>Where does the ECB appear in this story? Remember these funds mentioned earlier. As administrator of the Euro-currency, the ECB also provides funds to commercial banks. And it virtually cannot run out of money. It has to be clear, though, the ECB does NOT set Euribor rates nor vice versa. But the <strong class="cfo-tip">policies of the ECB very much influence setting rates</strong>, by the bank panel, for the Euribor.</p>
+    
+    <p>Figure 2 displays the historical rates of the ECB, Euribor and an indication of Belgian composite cost of borrowing. The latter is shown to <strong class="cfo-tip">indicate how commercial rates for corporations follow the general trend of the Euribor</strong>. On average, the rate at which non-financial corporations loan money from the commercial bank lies 1.75% higher than Euribor 1-month rate. This partially explains the gross profit margins of a commercial bank. However, in our experience, this additional rate can vary widely depending on how well you present your investment to the bank. A good presentation might work in your favour.</p>
+    
+    <p><em>Note: between June 2000 and October 2008 the ECB used variable rates instead of fixed rates. This data was combined</em></p>
+    
+    <div id="graph-euribor-vs-corporate-rate" style="width:600px;height:250px;"></div>
+
+    <script>
+      fetch('https://dev-rent.github.io/mkt-blogs/static/json/euribor_vs_corporate_rates.json')
+        .then(response => response.json())
+        .then(data => {
+          Plotly.newPlot('graph-euribor-vs-corporate-rate', data.data, data.layout);
+        })
+        .catch(err => console.error(err));
+    </script>
+  </section>
+
+  <section id="inflation-rates-economy">
+    <h2 class="h2-blog">Inflation, rates and the economy</h2>
+    <p><em>Need a refresher? The Wall Street Journal explains how rates impact U.S. Economy. The same principle is in effect for the European Market, <a href="https://www.youtube.com/watch?v=AkMsMDk_brU" target="_blank" rel="noopener">video</a>.</em></p>
+    
+    <p><strong class="cfo-tip">The economy</strong>, or also referred to as the market, is based on the principle that anyone who is active in that market is able to participate in that particular market. An employee generates value for a company by doing work. In turn, the company can generate more value, i.e. goods or services, to sell. And the revenue generates a wage for that employee. The goal is <strong class="cfo-tip">always to create more value</strong>, often represented by money. These participants are you and I, or anyone else in a certain region and active in that particular economy.</p>
+
+    <p>Another element in an economy is <strong class="cfo-tip">scarcity</strong>. At any given point in time, or seen over longer period, there is always <strong class="cfo-tip">a limitation on resources that are available</strong>. Whether it is not the right season for a certain fruit or some natural disaster messed up the supply chain of some rare-earth material, which slows down production (Remember the computer chip scarcity that influenced consumer goods and the automotive sector?). Scarcity is often the driving force for raising prices.</p>
+    
+    <p>Then there is <strong class="cfo-tip">competition</strong> between markets. The Belgian market is a well-known chemicals market, particular pharmaceuticals (approx. $44b in 2020), and a services market (approx. $40b in 2020). These products are our economy's export products. But the Belgian economy is also a notorious import market, currently valued at $449b vs $403b in <a href="https://oec.world/en/profile/country/bel?depthSelector1=HS2Depth&amp;yearSelector1=2020&amp;yearlyTradeFlowSelector=flow1&amp;compareEciSelector=compareBy2" target="_blank" rel="noreferrer noopener">export</a>. One market can never provide all required goods and services, so <strong class="cfo-tip">trade necessary if growth</strong> is desired. In Europe, all regional submarkets form one big European Market.</p>
+
+    <p>Which brings us to <strong class="cfo-tip">inflation and recession</strong>. Inflation is the <strong class="cfo-tip">erosion of income</strong>. Let's imagine a Monopoly game where money would be handed out very quickly, faster than some players can generate new income. Problems would soon arise. Another way of looking at inflation is that a participant of a market cannot generate income quickly enough to keep on participating in that economy because prices rise quickly and other participants do have generated enough income. Theoretically, it becomes an extreme inequality if you will.</p>
+
+    <p>Recession is arguably worse. <strong class="cfo-tip">Recession cuts spending</strong> which usually leads to lay-offs. Participants without a job cannot generate any income and are likely worse off than with high inflation, where there is little income.</p>
+
+    <p>So this is <strong class="cfo-tip">the part where interest rates become important</strong>. In times of excessive inflation, raising interest rates will cut back spending, prices will stabilise and wages can rise in order to get everyone back on track. Otherwise, in times of relative recession, lowering the rates will stimulate the market to create work or to venture on riskier paths in order to create value. Thus it forms <strong class="cfo-tip">an incentive to spend money and hire people</strong>.</p>
+
+    <p>But there is <strong class="cfo-tip">a catch</strong> to it all: at the end of the day, economies are still dependent on <strong class="cfo-tip">people participating</strong> in it. Each and everyone has their own thoughts on how to participate in it. If you look back at figure 2, it could be reasoned that there were 10 years of relative recession. But the pandemic has halted markets and most participants were able to save some money. In 2022, after COVID, everyone and all the economies wanted to be active again. Money was being spent to buy necessary goods and prices rose so that, halfway 2022, higher interest rates made all buyers think twice about whether they actually wanted to spent their money on those goods.</p>
+  </section>
+
+  <section id="influence-of-interest-rates">
+    <h2 class="h2-blog">Influence of rates on businesses</h2>
+
+    <p>Now let's focus on businesses. Imagine you have found <em>the next big thing</em>. Likely all of your efforts are focussed on making and selling your product and/or service. Virtually every entrepreneur confesses that focussing on your product, will take all of your time. Yet business-wise, it remains important to know when to invest in your business and when to hold back. In order to give <strong class="cfo-tip">an insight in what financial experts can mean for your business</strong>, an example follows on <em>why</em> it is important to keep an eye on those rates.</p>
+
+    <p>First and foremost, there is <strong class="cfo-tip">never only one variable</strong> to take in account for successful growth or expansion. Even if the product or service is a direct-hit and is sold out and generates maximum revenue, still, other variables in this equation can be and are not exclusive to:</p>
+
+    <ul>
+      <li><strong class="cfo-tip">Capital</strong>: equity versus debt. How much do you own and how much is borrowed one way or another.</li>
+      <li><strong class="cfo-tip">Production</strong>: workforce cost, facilities, machinery and maintenance etc.</li>
+      <li><strong class="cfo-tip">Losses</strong>: production delays, bad times, sickness etc.</li>
+      <li><strong class="cfo-tip">Inflation</strong>: our minimum-required resources become more expensive, e.g. electricity bill.</li>
+      <li>Many more…</li>
+    </ul>
+
+    <p>With a <strong class="cfo-tip">simplified example</strong>, <strong class="cfo-tip">scenario 1 and scenario 2</strong>, will illustrate how two different loan rates (2% vs. 4%) can <strong class="cfo-tip">impact a business solely based on those rates</strong>. In this example, we created a sneaker business and baptised it Ekin B.V.. The bank will allow us 1-year financial assistance with a maximum of €150k. As long as our sales are good, we can expect the same conditions next year.</p>
+
+    <p>Our <strong class="cfo-tip">business strategy </strong>will be:</p>
+    <ol>
+      <li>Increase production to maximum capacity.</li>
+      <li>If there is profit, reduce financial assistance but keep maximum production.</li>
+      <li>Gain 50k equity.</li>
+    </ol>
+
+    <p><strong class="cfo-tip">Simplifications</strong>:</p>
+    <ul>
+      <li>No depreciation or amortisation is applied.</li>
+      <li>Costs are simplified.</li>
+      <li>Earnings are simplified.</li>
+      <li>Rates are fixed.</li>
+    </ul>
+
+    <p>Our <strong class="cfo-tip">production line</strong> is simple:</p>
+    <ul>
+      <li>a €50k machine with €10k maintenance fee every year after. Maximum capacity is 1500.</li>
+      <li>Price per unit is €100, incl. all costs from resource to customer.</li>
+    </ul>
+    <p><em>Note: strategy is a very important part of business. Derived from strategies are budget allocations, reinvestment options, production methods and much more. It is impossible to simplify a case while taking in account all these factors. Therefore, the above mentioned strategy is the one applied to the example.</em></p>
+    
+    <figure class="wp-block-image size-large is-resized">
+      <img src="https://cforent.com/wp-content/uploads/2024/02/thumbnail_scenario-1-851x1024.png" alt="scenario 1 with 2% interest rate" class="wp-image-2401" width="594" height="714"/>
+    </figure>
+
+    <figure class="wp-block-image size-large is-resized">
+      <img src="https://cforent.com/wp-content/uploads/2024/02/thumbnail_scenario-2-844x1024.png" alt="scenario 2 with 4% interest rate" class="wp-image-2402" width="592" height="718"/>
+    </figure>
+
+    <h3 class="h3-blog">Review after five years, based on strategy</h3>
+    <ul>
+      <li>Both scenarios managed full capacity in their fourth year, but scenario 1 did so more comfortable. The difference in production capacity for year 2 and year 3 was respectively 30 units and 69 units out of 1500 total.</li>
+      <li>In scenario 1, the financial assistance was lowered to €100k vs. €116k in scenario 2.</li>
+      <li>In scenario 1, the beginning of year 5, the equity exceeded €50k (&gt;€60k). An additional machine to expand production could be considered from now on. Scenario 2 did not manage to fulfil this.</li>
+    </ul>
+
+    <p>The <strong class="cfo-tip">most important key point</strong> to take away from this illustrative example is that <strong class="cfo-tip">interest rates on financial assistance can significantly impact a business' decisions, growth and expansion</strong>. Keeping track of rates helps a business to assess its future. The job market is flooded with applications for financial experts and it should be no surprise that the financial sector is estimated at $31.000 billion. This gives a little insight on why corporations heavily depend on financial expertise for keeping their business alive.</p>
+  </section>
+
+  <section id="summary">
+    <h2 class="h2-blog">Summary</h2>
+    <p>We've started this article with the introduction of the Euribor and describing how it forms a benchmark for future rate setting. Financial experts should be up-to-date on this rates if they wish to foresee certain trends in the economy. Although commercial rate setting is never far behind, the Euribor and ECB-rates are two early indicators on what rates will do in the future. If you <strong class="cfo-tip">combine this knowledge with relevant industry news, it can give your business a huge advantage for planning growth</strong>.</p>
+    
+    <p>Our illustrative example showed that <strong class="cfo-tip">rates have a larger impact on the revenue</strong> than might appear at first sight. Although the payback difference for each individual year was only €3.000, the difference in revenue after five years became a whopping €17k. That ought to give your business a little extra help!</p>
+    
+    <p>But it is also important to <strong class="cfo-tip">understand why these rates go up and down</strong>. Rate setting is a mere simple yet relative effective tool in steering economies and making sure everyone can participate in it. And a clear understanding as to what a rise or lowering means, provides you with a more sensitive feeling of what the market is needing.</p>
+    
+    <p>In this article, we pointed out that interest rates you might receive for your growth can be variable, even when they seem to be fixed rates. The rule of thumb would be that good preparation and clear communication with your bank can be highly beneficial for your business when looking for financing. <strong class="cfo-tip">At CFOrent, we specialise in acquiring loans for our clients while assisting them with the financial side of their businesses</strong>. Our starting point is always understanding your business and using our expertise in preparing your statements or searching for beneficial factors that'll help convince the bank giving your business an optimal rate. Don't hesitate to reach out <a href="https://cforent.com/contact/" target="_blank" rel="noopener">contact us</a>!</p>  
+  </section>
+
+  <section id="sources">
+    <h3 class="h3-blog"><em>Data sources</em></h3>
+    <ul class="has-small-font-size">
+      <li>
+        <a href="https://data.ecb.europa.eu/data/datasets/FM?searchTerm=&amp;filterSequence=frequency&amp;filterType=advanced&amp;showDatasetModal=false&amp;selectedAdvTab=&amp;filtersReset=false&amp;resetAllFilters=false&amp;sort=relevance&amp;dataset%5B%5D=Financial+market+data+%28FM%29&amp;advFilter%5BFinancial+market+data+%28FM%29%5D%5BfilterSequence%5D=&amp;advFilter%5BFinancial+market+data+%28FM%29%5D%5BFrequency-CL_FREQ%5D%5B%5D=A&amp;advFilter%5BFinancial+market+data+%28FM%29%5D%5BFinancial+market+provider+identifier-CL_PROVIDER_FM_ID%5D%5B%5D=EURIBOR1MD_&amp;advFilter%5BFinancial+market+data+%28FM%29%5D%5BFinancial+market+provider+identifier-CL_PROVIDER_FM_ID%5D%5B%5D=EURIBOR1YD_&amp;advFilter%5BFinancial+market+data+%28FM%29%5D%5BFinancial+market+provider+identifier-CL_PROVIDER_FM_ID%5D%5B%5D=EURIBOR3MD_&amp;advFilter%5BFinancial+market+data+%28FM%29%5D%5BFinancial+market+provider+identifier-CL_PROVIDER_FM_ID%5D%5B%5D=EURIBOR6MD_&amp;advFilterDataset%5B%5D=Financial+market+data+%28FM%29/" target="_blank" rel="noopener">Euribor historical rates</a>, <em>consulted on 20-01-2024</em>.
+      </li>
+      <li>
+        <a href="https://data.ecb.europa.eu/data/data-categories/ecbeurosystem-policy-and-exchange-rates/official-interest-rates/" target="_blank" rel="noopener">ECB historical rates</a>, <em>consulted on 20-01-2024</em>.
+      </li>
+      <li>
+        <a href="https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/mfi_interest_rates/html/index.nl.html#:~:text=MFI%20interest%20rate%20statistics%20cover,in%20the%20euro%20area%20countries./" target="_blank" rel="noreferrer noopener nofollow">Belgian composite cost historical data</a>, <em>consulted on 20-01-2024</em>.
+      </li>
+    </ul>
+  </section>
+</article>
