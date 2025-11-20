@@ -1,6 +1,6 @@
-<script src="https://cdn.plot.ly/plotly-3.3.0.min.js" charset="utf-8"></script>
 <title>Financial Insights: Planning Growth Based On Interest Rates</title>
-<link rel="stylesheet" href="/static/css/style.css">
+<script src="https://cdn.plot.ly/plotly-3.3.0.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://dev-rent.github.io/mkt-blogs/static/css/style.css">
 <link rel="stylesheet" href="https://dev-rent.github.io/mkt-blogs/static/css/blog_style.css">
 
 <article>
@@ -40,7 +40,7 @@
     
     <p>Out of historical data, it is <strong class="cfo-tip">possible to derive historical trends</strong>, as shown in figure 1. Before 2008, business was booming, so to speak. But in October of that same year, financial institutions began to crumble, the financial crisis began and rates started dropping. Following that crisis was the European debt crisis which was halted by Mario Draghi's famous words: "Whatever it takes". Many will remember the declining interest rates afterwards, which saw their turn-around in 2022.</p>
     
-    <div id="graph-euribor" style="width:600px;height:250px;"></div>
+    <div id="graph-euribor" style="width:vw;height:400px;"></div>
 
     <script>
       fetch('https://dev-rent.github.io/mkt-blogs/static/json/euribor_rates.json')
@@ -61,7 +61,7 @@
     
     <p><em>Note: between June 2000 and October 2008 the ECB used variable rates instead of fixed rates. This data was combined</em></p>
     
-    <div id="graph-euribor-vs-corporate-rate" style="width:600px;height:250px;"></div>
+    <div id="graph-euribor-vs-corporate-rate" style="width:vw;height:400px"></div>
 
     <script>
       fetch('https://dev-rent.github.io/mkt-blogs/static/json/euribor_vs_corporate_rates.json')
