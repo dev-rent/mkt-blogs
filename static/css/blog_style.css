@@ -178,6 +178,10 @@ tfoot td {
 
 /* Full width on mobile */
 @media (max-width: 768px) {
+  article {
+    width: 90%
+  }
+  
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
