@@ -19632,9 +19632,6 @@
         "1999-01-01",
         "2024-02-07"
       ],
-      "title": {
-        "text": "Year"
-      },
       "autorange": true
     },
     "yaxis": {
