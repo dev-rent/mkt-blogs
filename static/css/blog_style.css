@@ -50,7 +50,7 @@ li { margin: 5px; }
    Plotly Styling
 ========================= */
 .plotly-container {
-  width: 100vw;
+  width: 100%;
   height: 500px;
 }
 
@@ -243,8 +243,31 @@ button {
    Mobile
 ========================= */
 @media (max-width: 768px) {
-  article {
-    width: 90%;
+  thead,
+  td {
+    font-size: 10px;
+    word-wrap: break-word;
+  }
+
+  .plotly-container {
+  width: 100%;
+  height: 500px;
+  }
+  
+  .table-container {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+  }
+  
+  .tabs {
+    flex-wrap: wrap;
+  }
+  
+  .tab-link {
+    flex: 1 1 auto;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 
   .wrapper {
@@ -253,27 +276,5 @@ button {
 
   .wrapper > div {
     width: 100%;
-  }
-
-  .table-container {
-    width: 100%;
-    table-layout: fixed;
-    text-align: center;
-  }
-
-  thead,
-  td {
-    font-size: 10px;
-    word-wrap: break-word;
-  }
-
-  .tabs {
-    flex-wrap: wrap;
-  }
-
-  .tab-link {
-    flex: 1 1 auto;
-    font-size: 14px;
-    padding: 8px 12px;
   }
 }
