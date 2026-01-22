@@ -1,8 +1,8 @@
 <meta name="author" content="Lenny Brans">
 <title>Empowering Your Business by Understanding Covenants and Collateral</title>
-<script src="https://cdn.plot.ly/plotly-3.3.0.min.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://dev-rent.github.io/mkt-blogs/static/css/style.css">
 <link rel="stylesheet" href="https://dev-rent.github.io/mkt-blogs/static/css/blog_style.css">
+<script src="https://cdn.plot.ly/plotly-3.3.0.min.js" charset="utf-8"></script>
 
 <article>
   <section id="introduction">
@@ -36,12 +36,12 @@
     <p>The findings of the Bank Lending Survey are subject to the banks' perspectives and may not necessarily reflect how the general public perceives these conditions. More info can be found in the <a href="https://www.ecb.europa.eu/stats/pdf/ecbblsglossary.en.pdf" target="_blank" rel="noopener">ECB Glossary</a>.</p>
 
     <figure>
-      <img src="https://cforent.com/wp-content/uploads/2024/04/Net-Percentage-1024x230.png" alt="example calculation net percentage." class="wp-image-2450"/>
+      <img src="https://cforent.com/wp-content/uploads/2024/04/Net-Percentage-1024x230.png" alt="example calculation net percentage."/>
       <figcaption style="font-size: small;">Fig. 1: Example calculation Net percentage.</figcaption>
     </figure>
 
     <figure>
-      <img src="https://cforent.com/wp-content/uploads/2024/04/Diffusion-Index-1024x230.png" alt="example calculation diffusion index." class="wp-image-2451"/>
+      <img src="https://cforent.com/wp-content/uploads/2024/04/Diffusion-Index-1024x230.png" alt="example calculation diffusion index."/>
       <figcaption style="font-size: small;">Fig. 2: Example calculation diffusion index.</figcaption>
     </figure>
   </section>
@@ -71,7 +71,9 @@
       <p><strong class="cfo-tip">CFOrent Tip</strong>: Covenants are negotiable. If you do not agree with certain covenants, negotiate other terms. Think win-win; the bank will be more inclined to accept your counteroffer if they feel you are being reasonable.</p>
     </blockquote>
 
-    <div id="graph-t-c-covenants" style="width:vw;height:400px"></div>
+    <div class="plotly-container">
+      <div id="graph-t-c-covenants"></div>
+    </div>
 
     <script>
       fetch('https://dev-rent.github.io/mkt-blogs/static/json/t_c_covenants.json')
@@ -109,7 +111,9 @@
 
     <p>It's essential for small business owners and start-ups to carefully evaluate their available collateral and understand the implications of pledging assets to secure a loan. By leveraging collateral effectively, businesses can <strong class="cfo-tip">increase </strong>their chances of accessing <strong class="cfo-tip">financing at favourable terms</strong> while minimising the lender's risk. However, borrowers should also be aware of the potential consequences of default, including the loss of pledged assets<strong class="cfo-tip">. Collaborating with financial advisors and legal experts can help </strong>businesses navigate the collateral process and make informed decisions that align with their long-term growth objectives.</p>
 
-    <div id="graph-t-c-collateral" style="width:vw;height:400px"></div>
+    <div class="plotly-container">
+      <div id="graph-t-c-collateral"></div>
+    </div>
 
     <script>
       fetch('https://dev-rent.github.io/mkt-blogs/static/json/t_c_collateral.json')
@@ -136,7 +140,9 @@
 
     <p><em>Note: the length of the bars are irrelevant. The European data represents </em><strong>weighted Net Percentages</strong><em>, where the Belgian data is isolated for the Belgian market.</em></p>
 
-    <div id="graph-be-vs-eu-covenants" style="width:vw;height:400px"></div>
+    <div class="plotly-container">
+      <div id="graph-be-vs-eu-covenants"></div>
+    </div>
 
     <script>
       fetch('https://dev-rent.github.io/mkt-blogs/static/json/be_vs_eu_covenants.json')
@@ -147,7 +153,9 @@
         .catch(err => console.error(err));
     </script>
 
-    <div id="graph-be-vs-eu-collateral" style="width:vw;height:400px"></div>
+    <div class="plotly-container">
+      <div id="graph-be-vs-eu-collateral"></div>
+    </div>    
 
     <script>
       fetch('https://dev-rent.github.io/mkt-blogs/static/json/be_vs_eu_collateral.json')
