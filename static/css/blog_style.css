@@ -5,18 +5,16 @@
   font-size: 32px;
   padding-top: 24px;
 }
-
 .h2-blog {
-  font-size: 24px;
-  font-weight: 900;
-  padding-top: 10px;
-  margin-top: 30px;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  padding-top: 10px !important;
+  margin-top: 30px !important;
 }
-
 .h3-blog {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-top: 20px !important;
 }
 
 blockquote {
