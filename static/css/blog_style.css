@@ -36,33 +36,22 @@ li { margin: 5px; }
   font-weight: bold;
 }
 
-.img {
-  text-align: center;
-}
-
 .latex {
   font-size: 0.85em;
   max-width: 100%;
   overflow: auto;
 }
 
+.sources {
+  font-size: smaller;
+}
+
 /* =========================
-   Plot Styling
+   Plotly Styling
 ========================= */
-.plot {
-  width: 100%;
-  margin-bottom: 10px;
-  overflow-x: auto;
-}
-
-.plot-caption {
-  width: 66%;
-  margin: 0 auto;
-  font-size: small;
-}
-
-.plotly-fig {
-  min-width: 800px;
+.plotly-container {
+  width: 100vw;
+  height: 500px;
 }
 
 /* =========================
