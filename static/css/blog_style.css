@@ -47,6 +47,17 @@ li { margin: 5px; }
 }
 
 /* =========================
+   Figure Styling
+========================= */
+figure {
+  width: 90%;
+}
+
+figcaption {
+  font-size: smaller;
+}
+
+/* =========================
    Plotly Styling
 ========================= */
 .plotly-container {
