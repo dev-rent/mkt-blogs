@@ -1,0 +1,136 @@
+<meta name="author" content="Lenny Brans">
+<title>Becoming AI-powered</title>
+<link rel="stylesheet" href="https://dev-rent.github.io/mkt-blogs/static/css/style.css">
+<link rel="stylesheet" href="https://dev-rent.github.io/mkt-blogs/static/css/blog_style.css">
+
+<article>
+  <section id="introduction">
+    <h1>Becoming AI-Powered</h1>
+    <p>In this article, we explore the role of AI in business and highlight key considerations for successfully integrating AI into your operations. While many hope for <em>a magic shortcut</em>, implementing AI is like any major strategic initiative—it requires time, effort, resources, and expertise.</p>
+    <p>That's why this article is based on valuable resources, including books, podcasts, news articles, and tools. For your convenience, we've also created a downloadable resource sheet with links to tools.</p>
+    <p>As we move through the article, we'll see that AI is a broad and often ambiguous term. However, for simplicity, we'll use "AI" to refer to machine learning, deep learning, or generative AI.</p>
+  </section>
+
+  <section id="key-take-aways">
+    <h1 class="h2-blog">Key Takeaways</h1>
+    <ul>
+      <li>A well-defined question or problem is the foundation of successful AI implementation.</li>
+      <li>Clean, relevant data is essential—poor data selection leads to poor outcomes.</li>
+      <li>AI success isn't about size but fit—the best model is the one tailored to your needs, making AI accessible to startups and SMEs alike.</li>
+    </ul>
+  </section>
+
+  <section id="what-is-ai">
+    <h1>Artificial Intelligence</h1>
+    <p>To define AI, we will rely on insights from experts in the field. In a comprehensive article, IBM explains <a href="https://www.ibm.com/think/topics/artificial-intelligence" rel="noopener noreferrer" target="_blank">Artificial Intelligence</a> and <a href="https://www.ibm.com/think/topics/ai-model" rel="noopener noreferrer" target="_blank">AI models</a>.</p>
+    <figure class="img-container">
+      <img src="https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/39/1f/diagram-comparing-ai-ml-deep-learning-gen-ai.png" alt="Diagram showing different levels of artificial intelligence">
+      <figcaption>Fig. 1: Abstract layers of Artificial Intelligence. Source: <a href="https://www.ibm.com/think/topics/artificial-intelligence" rel="noopener noreferrer" target="_blank">IBM</a></figcaption>
+    </figure>
+    <p>Artificial Intelligence is an umbrella term for <em>the tools and techniques that enable machines to mimic human behavior</em>. In recent years, AI headlines have been dominated by generative AI (Gen AI), particularly Large Language Models (LLMs).</p>
+    <p>Although all forms of AI are built on similar principles—such as algorithms, machine learning and deep learning—their programming and training models vary significantly depending on their specific use cases.</p>
+    <figure>
+      <img src="https://www.scnsoft.com/blog-pictures/business-intelligence/types-of-ai-01_1.png" alt="Fields of use for AI, summarized by their output.">
+      <figcaption>Fig. 2: AI categories. Source: <a href="https://www.scnsoft.com/blog/artificial-intelligence-types" rel="noopener noreferrer" target="_blank">ScienceSoft</a></figcaption>
+    </figure>
+    <p>It's important to remember that artificial intelligence automates actions and decisions. All of the categories mentioned above fall under <strong>artificial narrow intelligence</strong>—algorithms designed to excel at specific tasks. The hypothetical, futuristic AI that could match human capabilities across all domains is known as <strong>artificial general intelligence</strong>.</p>
+  </section>
+
+  <section id="define-your-needs">
+    <h1>Define Your Needs</h1>
+    <p>The good news is that AI is accessible to everyone. Whether your business is small or large, you can become AI-powered with a clear vision. There's no need for extravagant budgets or a Silicon Valley dream team. However, developing effective AI requires a structured, academic approach. This brings us back to an essential concept from statistics: hypothesis testing.</p>
+    
+    <p>In hypothesis testing, it's crucial to define a specific question—for example, will raising prices increase our revenue? When posing this question, <strong class="cfo-tip">you cannot make any assumptions</strong>. The null hypothesis assumes that the statement is not true (or that there is no effect).</p>
+    <p>Once you defined your question, chances are you have to break it down in a lot of smaller questions, or hypothesis. Consider this example:</p>
+    
+    <blockquote>
+      <p>Management wants to implement a dynamic pricing algorithm. If successful, they plan to automate it, removing the need for supervision.</p>
+      <p>Many would start by analysing historical pricing data to see if raising prices led to increased revenue. While this is a necessary step, we should immediately ask ourselves some critical questions:</p>
+      <ul>
+        <li>Were prices raised due to external factors, such as rising costs of raw materials?</li>
+        <li>How sensitive is our revenue to seasonal trends?</li>
+        <li>What other factors influence revenue?</li>
+      </ul>
+      <p>Remember, observing a correlation between higher prices and increased revenue does not mean that price increases directly drive revenue growth. Instead, we should break this question down in several hypothesises. For example:</p>
+      <ul>
+        <li>Raising prices during peak hours leads to a higher sales amount.</li>
+        <li>Raising prices during peak hours leads to a higher average invoice.</li>
+        <li>Lowering prices during off-peak hours leads to more order conversions per visitor.</li>
+        <li>...</li>
+      </ul>
+      <p>These are by far too few questions to create a sensible AI tool BUT breaking it down in these small, easy questions will allow your business to train many, very specific and, typically, cheaper models that can be used as input for the larger model/network in the future.</p>
+    </blockquote>
+    
+    <p>While it's impossible to account for every variable, we must recognise that data biases exist everywhere. Even the smallest bias can be absorbed by AI. Retail giant <a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G/" rel="noopener noreferrer" target="_blank">Amazon</a> learned this the hard way. And once you've defined your AI needs, the next crucial step is ensuring your data is accurate and meaningful.</p>
+    
+    <p>Feel free to <a href="https://www.survivalofthebestfit.com/" rel="noopener noreferrer" target="_blank">test your bias</a> in this game, and experience the pitfalls of creating a biased AI-model firsthand.</p>
+  </section>
+
+  <section id="data">
+    <h1>Data, Data, Data</h1>
+    <p>If you follow the news, you might have read headlines stating that LLMs such as ChatGPT were trained on billions of tokens. While this may be true, having vast amounts of data is not always necessary to draw accurate conclusions. The field of statistics proves that even a <a href="https://www.scientificamerican.com/article/howcan-a-poll-of-only-100/" rel="noopener noreferrer" target="_blank">small, well-chosen dataset</a> can provide valuable insights. If 17th-century astronomer Johannes Kepler could define the laws of planetary motion using roughly 2,000 data points, your business can certainly answer complex questions without an overwhelming amount of data.</p>
+    
+    <p>However, before moving forward, there are essential criteria your data must meet:</p>
+    
+    <ul>
+      <li><strong>Relevant</strong>: When it comes to data, less is often more. It may be tempting to feed a model with large datasets, but as mentioned earlier, biases are everywhere. Breaking down your questions in smaller hypothesises means you'll have to use concrete data to answer them.</li>
+      <li><strong>Understood</strong>: This may seem obvious, but the meaning of data is frequently <a href="https://digitalpoirots.com/all-you-need-to-know-about-data-misinterpretation-and-misuse/" rel="noopener noreferrer">misinterpreted or overstated</a>. For example, if the average value of a dataset is 5 and the median is 4.5, more than 50% of the data points are likely below 5. Make sure everyone understands why.</li>
+      <li><strong>Clean</strong>: Conducting an exploratory data analysis (EDA) is crucial. This process ensures that all values are present, within the expected range, and that a strategy is in place for handling missing data (whether by removing or substituting it).</li>
+    </ul>
+    
+    <p>The first step of creation, is creating a lot of smaller algorithm/models who each have a very specific output. Only later, a larger model or network is trained to seek patterns among all smaller inputs. Making cleaning data even more essential. Remember this: <strong class="cfo-tip">garbage in equals garbage out.</strong></p>
+    <p>Ensuring your data is relevant, understood, and clean is an achievable goal for any business!</p>
+  </section>
+
+  <section id="getting-started">
+    <h1>Getting Started Yourself</h1>
+    <p>Before we highlight key steps your business can take to transform into an AI-powered organization, let's dispel a few common misconceptions:</p>
+    <ul>
+      <li><strong>It's not too late</strong>: While AI seems to be everywhere, much of it is simply rebranded technology. Ten years ago, algorithms and machine learning were credited with <a href="https://www.youtube.com/watch?v=mrnXv-g4yKU" rel="noopener noreferrer" target="_blank">influencing the American elections</a>. Today, that same technology would be labeled as AI.</li>
+      <li><strong>It's not about size</strong>: Bigger models, such as LLMs, are trained for <em>broad language usage</em>. Chances are, they are not destined for your business. If you want to evaluate your business' reviews then training a SLM on typical review <em>dialect</em> is likely to achieve better results. While LLMs are great for summarising, SLMs are trained better for retrieving e.g. <a href="https://www.invisible.co/blog/how-small-language-models-can-outperform-llms">specific invoice data</a>.</li>
+      <li><strong>It's a joint effort</strong>: Evaluate whether you can share data with partners and both benefit from it. AI demands new forms of collaboration. Traditional business strategies focus on keeping valuable information in-house for competitive advantage. However, most businesses lack sufficient in-house expertise and data to build effective AI models. Apple, for example, has partnered with OpenAI, allegedly at <a href="https://www.forbes.com/sites/timbajarin/2024/06/14/is-apples-deal-with-openai-good-for-both-companies-or-only-apple/" rel="noopener noreferrer" target="_blank">no cost</a>.</li>
+    </ul>
+    <p>So where do you start? Becoming AI-powered means that every actor within your business must go through stages of <strong class="cfo-tip">awareness</strong>, <strong class="cfo-tip">proficiency</strong>, and <strong class="cfo-tip">expertise</strong> to become a <strong class="cfo-tip">driving force</strong>. This journey has two key focusses: <em>new elements</em> and <em>transforming existing assets</em>.</p>
+    <ul>
+      <li><strong>New Introductions</strong>: This includes all new elements entering your business—whether employees, procedures, or equipment. Each must align with your data strategy. This can be achieved through onboarding education, data-driven procedures, or IoT-enabled equipment. While this may sound costly, it can be as simple as incorporating data literacy into hiring decisions, updating existing workflows with a data-centric approach, or selecting equipment that offers data collection capabilities.</li>
+      <li><strong>Transformation of Assets</strong>: This involves adapting existing resources to align with your data strategy, such as educating employees and upgrading equipment.</li>
+    </ul>
+    <p>The following figure illustrates the prerequisites for achieving operational AI:</p>
+    <figure>
+      <img src="https://hackernoon.imgix.net/hn-images/1*7IMev5xslc9FLxr9hHhpFw.png?auto=format&fit=max&w=3840" alt="The data science hierarchy of needs">
+      <figcaption>Fig. 3: The Data Science Hierarchy of Needs. Source: <a href="https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007" rel="noopener noreferrer" target="_blank">Hackernoon</a></figcaption>
+    </figure>
+    <p>This transformation does not have to happen all at once. Beyond the foundational steps of establishing a data strategy and cleaning data, the frontrunners in your business can begin experimenting with training models.</p>
+    <p>Don't overspend on expensive, well-marketed programs. Instead, start with free trials or open-source tools like <a href="https://lookerstudio.google.com/overview" rel="noopener noreferrer" target="_blank">Looker</a> and <a href="https://cloud.google.com/automl" rel="noopener noreferrer" target="_blank">AutoML</a>. The goal at this stage is not to get definitive answers but to develop a deeper understanding of how AI works.</p>
+    <blockquote>
+      <p><strong>Concerned about sharing sensitive data? Use synthetic data.</strong></p>
+      <p>Multiply your revenue figures by a factor of 1,000. Generate a list of fake users with realistic interactions. Any competent data analyst, Python developer, or data scientist can create synthetic datasets in minutes.</p> 
+      <p>Just ensure you fully understand the transformations applied so you can correctly evaluate the results of your models.</p>
+    </blockquote>
+  </section>
+
+  <section id="the-best-model">
+    <h1>The Best Model is...</h1>
+    <p>... the one that unambiguous answers your problems! Throughout this article, I have emphasized mainly two things: <em>start small</em> and <em>clean your data</em>.</p>
+    <p>Remember that once you have created a successful model that evaluates whether <em>raising prices during peak hours leads to higher sales</em>, you technically are already AI-powered. It's use-case is just rather narrow.</p>
+    <p>Now project your business five years further. During these years, you have spent part of your budget to creating some models and have successfully created some accurate models. You evaluate their use-case and might be ready for the next step.</p>
+    <p>Just like creating a customer base that comes back to buy your product and/or service, you need to create a <em>library of models</em> that empower your business. And maybe, just maybe, one day you will have the optimal price adjusting AI super model!</p>
+    <p>Still need an extra example? <a href="https://www.youtube.com/watch?v=fCUkvL0mbxI" rel="noopener noreferrer" target="_blank">Builder.io</a> created their own image recognition model rather effective and relatively cheap, using Google's <a href="https://cloud.google.com/vertex-ai" rel="noopener noreferrer" target="_blank">Vertex AI</a>.</p>
+  </section>
+
+  <section id="enjoy-the-ride">
+    <h1>Enjoy the Ride</h1>
+    <p>Perhaps the most important takeaway from this article is to <strong>enjoy the ride</strong>. Business, by nature, is driven by competition, and the race to become AI-powered is no different. However, AI implementation is a <strong>long-term strategy</strong>.</p> 
+    <p>Feeling pressured because your competitors have already adopted AI while you haven't? Take a step back and consider the AI-category tree from Figure 2. What your competitor likely has is just a small branch of that tree—more likely a twig than a foundational limb.</p>
+    <p>Of course, AI adoption varies by industry. However, outside of tech companies, very few industries have successfully transitioned to truly smart, AI-driven business models. And in most cases, their transformation isn't significantly different from the trajectory they were already on a decade ago.</p>
+    <p>The concept of long-term innovation isn't new. In his book <em>Managers – The Day After Tomorrow</em>, author Rik Vera guides businesses through digital transformation and emphasizes the importance of allocating a small portion of time and resources to looking ahead—easily ten years into the future. The key is consistency: there are no shortcuts, only step-by-step progress.</p>
+    <p>So sit back, be patient, explore, stay curious, and most importantly—enjoy the ride!</p>
+  </section>
+
+  <section id="conclusion">
+    <h1>Conclusion</h1>
+    <p>In this article, we've only scratched the surface of what it takes to embrace AI and transform your business into an AI-powered enterprise. No hidden secrets, no shortcuts, and no <em>“Ten Things You Must Do”</em>—just solid strategic planning, smart resource allocation, and the courage to take the leap into AI-driven business transformation.</p>
+    <p>Our associates spend their weeks analysing financial data to optimize budgets, identify inefficiencies, and uncover the true story behind the numbers. At CFOrent, we help businesses define which data to use (and which to avoid), ensuring accurate interpretation, analysis, and application of financial insights. Together, we can assess external factors, quantify key data points, and guide your business through its AI transformation.</p>
+    <p>Ready to take the next step? <a href="https://www.cforent.be/contact/" rel="noopener noreferrer" target="_blank">Get in touch with us</a> today!</p>
+  </section>
+</article>
